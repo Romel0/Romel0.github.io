@@ -18,18 +18,18 @@ body {
 
 .image-container {
     position: relative;
-    overflow: hidden; /* Asegura que cualquier hijo que se desborde se recorte */
+    overflow: hidden; 
 }
 
 .image-container img {
     width: 100%; 
     height: auto; 
     display: block; 
-    transition: opacity 0.5s ease-in-out; /* Efecto suave para el cambio de opacidad */
+    transition: opacity 0.5s ease-in-out; 
 }
 
 .image-container::before {
-    content: ''; /* Pseudo-elemento para el efecto de degradado */
+    content: ''; 
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     background: radial-gradient(circle, transparent, #0b0a08 80%);
@@ -51,6 +51,28 @@ body {
     position: absolute; 
     top: 16%; 
     left: 80%; 
+    transform: translate(-50%, 0); 
+    color: white; 
+    font-size: 28px; 
+    margin: 0;
+    z-index: 2; 
+}
+
+.image-container .subheadingOne{
+    position: absolute; 
+    top: 80%; 
+    left: 31%; 
+    transform: translate(-50%, 0); 
+    color: white; 
+    font-size: 90px; 
+    margin: 0;
+    z-index: 2; 
+}
+
+.image-container .subheadingTwo{
+    position: absolute; 
+    top: 78%; 
+    left: 4%; 
     transform: translate(-50%, 0); 
     color: white; 
     font-size: 28px; 
@@ -80,4 +102,26 @@ body {
     max-width: 100%;
     height: auto; 
     display: block; 
+}
+
+
+.project-image {
+    position: relative;
+    width: 20%; 
+    height: auto;
+    overflow: hidden;
+    display: inline-block; 
+}
+
+
+.project-order {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-order-image {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
 }

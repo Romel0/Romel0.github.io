@@ -1,0 +1,45 @@
+
+   
+    body {
+        background-color: #191919; 
+        color: white;
+        font-family: 'Arial', sans-serif;
+
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .header {
+        text-align: left;
+        margin-bottom: 50px;
+        margin-left: 65%;
+        font-size: 50px;
+    }
+    .skills, .featured-works, .contact {
+        margin-bottom: 50px;
+    }
+
+    .line {
+        background-color: white;
+        height: 1px;
+      }
+
+    .right-aligned {
+        text-align: left;
+        color: yellow;
+    }
+
+    .about{
+        text-align: justified;
+        
+    }
+    .featured-work {
+        margin-bottom: 20px;
+    }
+    .featured-work img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
